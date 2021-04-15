@@ -74,16 +74,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                               rdfs:label "annotation_isRelatedTo_Disease"@en .
 
 
-###  http://covid-19.tib.eu/vocab/author
-<http://covid-19.tib.eu/vocab/author> rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
-                                      rdfs:range <http://covid-19.tib.eu/vocab/Author> ;
-                                      <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                      <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
-                                      rdfs:comment "Authors of publication"@en ;
-                                      rdfs:label "hasAuthors"@en .
-
-
 ###  http://covid-19.tib.eu/vocab/drug_interactsWith_drug
 <http://covid-19.tib.eu/vocab/drug_interactsWith_drug> rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf owl:topObjectProperty ;
@@ -133,16 +123,6 @@ xsd:date rdf:type rdfs:Datatype .
                                              <http://purl.org/dc/terms/modified> "2019-01-30"@en ;
                                              rdfs:comment "Connection between the annotation and the relation between annotation and publication"@en ;
                                              rdfs:label "hasAnnotation"@en .
-
-
-###  http://covid-19.tib.eu/vocab/hasAuthor
-<http://covid-19.tib.eu/vocab/hasAuthor> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
-                                         rdfs:range <http://covid-19.tib.eu/vocab/Author> ;
-                                         <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
-                                         <http://purl.org/dc/terms/modified> "2020-10-29"@en ;
-                                         rdfs:comment "."@en ;
-                                         rdfs:label "hasAuthor"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/hasCUIAnnotation
@@ -420,14 +400,41 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:label "arxiv_id"@en .
 
 
-###  http://covid-19.tib.eu/vocab/authorName
+###  http://covid-19.tib.eu/vocab/pubmed_id
+<http://covid-19.tib.eu/vocab/pubmed_id> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "Publications"^^xsd:string ;
+                                        rdfs:label "pubmed_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/sha_id
+<http://covid-19.tib.eu/vocab/sha_id> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "Publications identifier"^^xsd:string ;
+                                        rdfs:label "sha_id"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pmcid
+<http://covid-19.tib.eu/vocab/pmcid> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "Publications identifier"^^xsd:string ;
+                                        rdfs:label "pmcid"@en .
+
+
+###  http://covid-19.tib.eu/vocab/author
 <http://covid-19.tib.eu/vocab/authorName> rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain <http://covid-19.tib.eu/vocab/Author> ;
+                                          rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
                                           rdfs:range rdfs:Literal ;
                                           <http://purl.org/dc/terms/modified> "2019-05-24"@en ;
                                           rdfs:comment "Name of Author"@en ;
                                           rdfs:isDefinedBy "anery_patel"@en ;
-                                          rdfs:label "authorName"@en .
+                                          rdfs:label "author"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/confidence
@@ -871,15 +878,6 @@ xsd:date rdf:type rdfs:Datatype .
                                           <http://purl.org/dc/terms/description> "e.g. CUI IDs provided by UMLS."@en ;
                                           rdfs:comment "Explanation of a concept including label, id and source of concept."@en ;
                                           rdfs:label "Annotation"@en .
-
-
-###  http://covid-19.tib.eu/vocab/Author
-<http://covid-19.tib.eu/vocab/Author> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://covid-19.tib.eu/vocab/Concept> ;
-                                      <http://purl.org/dc/terms/modified> "2020-05-24"@en ;
-                                      rdfs:comment "Author of Scientific publications."@en ;
-                                      rdfs:isDefinedBy "anery_patel"@en ;
-                                      rdfs:label "Author"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/CAUSES
