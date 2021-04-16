@@ -76,7 +76,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/drug_interactsWith_drug
 <http://covid-19.tib.eu/vocab/drug_interactsWith_drug> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf owl:topObjectProperty ;
                                                        rdfs:domain <http://covid-19.tib.eu/vocab/Drug> ;
                                                        rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                        <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
@@ -176,7 +175,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/interactor1_hasDrugBankID
 <http://covid-19.tib.eu/vocab/interactor1_hasDrugBankID> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf owl:topObjectProperty ;
                                                          rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
                                                          rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                          <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
@@ -196,7 +194,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/interactor2_hasDrugBankID
 <http://covid-19.tib.eu/vocab/interactor2_hasDrugBankID> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf owl:topObjectProperty ;
                                                          rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
                                                          rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                          <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
@@ -217,7 +214,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/objectDrug
 <http://covid-19.tib.eu/vocab/objectDrug> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf owl:topObjectProperty ;
                                           rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
                                           rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                           <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
@@ -228,7 +224,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/object_hasDrugBankID
 <http://covid-19.tib.eu/vocab/object_hasDrugBankID> rdf:type owl:ObjectProperty ;
-                                                    rdfs:subPropertyOf owl:topObjectProperty ;
                                                     rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
                                                     rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                     <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
@@ -238,7 +233,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/precipitantDrug
 <http://covid-19.tib.eu/vocab/precipitantDrug> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf owl:topObjectProperty ;
                                                rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
                                                rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                <http://purl.org/dc/terms/modified> "2021-04-13"@en ;
@@ -249,7 +243,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID
 <http://covid-19.tib.eu/vocab/precipitant_hasDrugBankID> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf owl:topObjectProperty ;
                                                          rdfs:domain <http://covid-19.tib.eu/vocab/DrugDrugInteraction> ;
                                                          rdfs:range <http://covid-19.tib.eu/vocab/Drug> ;
                                                          <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
@@ -270,7 +263,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/relation_hasObjectGene_annotation
 <http://covid-19.tib.eu/vocab/relation_hasObjectGene_annotation> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
                                                                  rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
                                                                  rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
                                                                  <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
@@ -280,7 +272,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/relation_hasObject_annotation
 <http://covid-19.tib.eu/vocab/relation_hasObject_annotation> rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf owl:topObjectProperty ;
                                                              rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
                                                              rdfs:range <http://covid-19.tib.eu/vocab/Annotation> ;
                                                              <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
@@ -290,7 +281,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/relation_hasSubjectGene_Annotation
 <http://covid-19.tib.eu/vocab/relation_hasSubjectGene_Annotation> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
                                                                   rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
                                                                   rdfs:range <http://covid-19.tib.eu/vocab/Gene> ;
                                                                   <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"@en ;
@@ -300,7 +290,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/relation_hasSubject_annotation
 <http://covid-19.tib.eu/vocab/relation_hasSubject_annotation> rdf:type owl:ObjectProperty ;
-                                                              rdfs:subPropertyOf owl:topObjectProperty ;
                                                               rdfs:domain <http://covid-19.tib.eu/vocab/Relation> ;
                                                               rdfs:range <http://covid-19.tib.eu/vocab/Annotation> ;
                                                               <http://purl.org/dc/terms/modified> "2021-04-13T00:00:00"^^xsd:dateTime ;
