@@ -340,6 +340,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse
 <http://covid-19.tib.eu/vocab/sideEffect_isRelatedTo_dse> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://covid-19.tib.eu/vocab/DrugSideEffectInteraction> ;
                                                           rdfs:range <http://covid-19.tib.eu/vocab/DrugSideEffect> ;
                                                           <http://purl.org/dc/terms/creator> <https://www.tib.eu/en/research-development/scientific-data-management/staff/samaneh-jozashoori/> ;
                                                           <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
@@ -400,34 +401,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         rdfs:label "arxiv_id"@en .
 
 
-###  http://covid-19.tib.eu/vocab/pubmed_id
-<http://covid-19.tib.eu/vocab/pubmed_id> rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
-                                        rdfs:range rdfs:Literal ;
-                                        rdfs:comment "Publications"^^xsd:string ;
-                                        rdfs:label "pubmed_id"@en .
-
-
-###  http://covid-19.tib.eu/vocab/sha_id
-<http://covid-19.tib.eu/vocab/sha_id> rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
-                                        rdfs:range rdfs:Literal ;
-                                        rdfs:comment "Publications identifier"^^xsd:string ;
-                                        rdfs:label "sha_id"@en .
-
-
-###  http://covid-19.tib.eu/vocab/pmcid
-<http://covid-19.tib.eu/vocab/pmcid> rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
-                                        rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
-                                        rdfs:range rdfs:Literal ;
-                                        rdfs:comment "Publications identifier"^^xsd:string ;
-                                        rdfs:label "pmcid"@en .
-
-
-###  http://covid-19.tib.eu/vocab/author
+###  http://covid-19.tib.eu/vocab/authorName
 <http://covid-19.tib.eu/vocab/authorName> rdf:type owl:DatatypeProperty ;
                                           rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
                                           rdfs:range rdfs:Literal ;
@@ -648,6 +622,15 @@ xsd:date rdf:type rdfs:Datatype .
                                               rdfs:label "pmc_json_files"@en .
 
 
+###  http://covid-19.tib.eu/vocab/pmcid
+<http://covid-19.tib.eu/vocab/pmcid> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                     rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                     rdfs:range rdfs:Literal ;
+                                     rdfs:comment "Publications identifier"^^xsd:string ;
+                                     rdfs:label "pmcid"@en .
+
+
 ###  http://covid-19.tib.eu/vocab/predictionMethod
 <http://covid-19.tib.eu/vocab/predictionMethod> rdf:type owl:DatatypeProperty ;
                                                 rdfs:domain <http://covid-19.tib.eu/vocab/Interaction> ;
@@ -676,6 +659,15 @@ xsd:date rdf:type rdfs:Datatype .
                                             <http://purl.org/dc/terms/modified> "2020-07-24"@en ;
                                             rdfs:comment "Protein Label."@en ;
                                             rdfs:label "proteinName"@en .
+
+
+###  http://covid-19.tib.eu/vocab/pubmed_id
+<http://covid-19.tib.eu/vocab/pubmed_id> rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                         rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                         rdfs:range rdfs:Literal ;
+                                         rdfs:comment "Publications"^^xsd:string ;
+                                         rdfs:label "pubmed_id"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/relation_hasObject_confidenceScore
@@ -728,6 +720,15 @@ xsd:date rdf:type rdfs:Datatype .
 <http://covid-19.tib.eu/vocab/semanticTypeLabel> rdf:type owl:DatatypeProperty ;
                                                  rdfs:domain <http://covid-19.tib.eu/vocab/Annotation> ;
                                                  rdfs:range rdfs:Literal .
+
+
+###  http://covid-19.tib.eu/vocab/sha_id
+<http://covid-19.tib.eu/vocab/sha_id> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                      rdfs:domain <http://covid-19.tib.eu/vocab/Publication> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "Publications identifier"^^xsd:string ;
+                                      rdfs:label "sha_id"@en .
 
 
 ###  http://covid-19.tib.eu/vocab/source
